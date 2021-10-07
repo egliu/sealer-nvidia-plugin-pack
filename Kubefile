@@ -1,0 +1,5 @@
+FROM kubernetes:v1.19.9
+COPY ./nvidia-docker.tar .
+COPY ./nvidia-docker.sh .
+COPY ./post-install.sh .
+COPY ./nvidia-device-plugin.yml manifests
